@@ -63,7 +63,7 @@ class Main:
             else:
                 self._clear_properties()
             xbmc.sleep(100)
-            if not (xbmc.getCondVisibility("Window.IsVisible(videolibrary)") or xbmc.getCondVisibility("Window.IsVisible(videoplaylist)")):
+            if not (xbmc.getCondVisibility("Window.IsVisible(videoplaylist)")):
                 self._clear_properties()
                 xbmc.executebuiltin('ClearProperty(videolanguage_backend_running,home)')
                 self._stop = True
